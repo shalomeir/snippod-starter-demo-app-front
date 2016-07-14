@@ -1,0 +1,60 @@
+{ "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "ecmaFeatures" : {
+    "globalReturn": true,
+    "jsx": true
+  },
+  "rules": {
+    "jsx-quotes": [2, "prefer-double"],
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 2,
+    // Temporarirly disabled due to a possible bug in babel-eslint (todomvc example)
+    "block-scoped-var": 0,
+    // Temporarily disabled for test/* until babel/babel-eslint#33 is resolved
+    "padded-blocks": 0,
+    "comma-dangle": 0,  // not sure why airbnb turned this on. gross!
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "spaced-comment": [0, "never"],
+    "no-console": 0,
+    "no-alert": 0,
+//    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}]
+    "no-unused-vars": [0, {"vars": "all", "args": "after-used"}],
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "id-length": [2, {"min": 1, "max": 50, "properties": "never", "exceptions": ["x"]}],
+    "max-len": 0,
+    "quote-props": 0,
+    "no-param-reassign": [2, {"props": false}],
+    "no-nested-ternary": 0,
+    "new-cap": [2, {"capIsNewExceptions": ["Radium"]}],
+    "react/jsx-indent-props": 0,
+    "react/jsx-closing-bracket-location": [2, {selfClosing: 'after-props', nonEmpty: 'after-props'}],
+    "react/jsx-no-bind": 0
+  },
+  "plugins": [
+    "import"
+  ],
+  "settings": { 
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      moduleDirectory: ["node_modules", "src"]
+    }
+  },
+  "globals": {
+    "__DEVELOPMENT__": true,
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DISABLE_SSR__": true,
+    "__DEVTOOLS__": true,
+    "socket": true,
+    "webpackIsomorphicTools": true
+  }
+}

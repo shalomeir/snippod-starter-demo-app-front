@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+
+node_modules/
+dist/
+semantic/dist/
+semantic/examples/
+semantic/Semantic-UI-Docs/
+_translations
+*.iml
+webpack-stats.json
+webpack-assets.json
+npm-debug.log
+auto_default_code/

@@ -1,0 +1,22 @@
+{
+  "name": "snippod-starter-demo-app-front",
+  "description": "A front part of the 'snippod-starter-demo-app' Full stack demo application based on React and Redux",
+  "repository": "",
+  "logo": "",
+  "keywords": [
+    "react",
+    "universal",
+    "webpack",
+    "hot reloading",
+    "react-hot-reloader",
+    "redux",
+    "starter",
+    "boilerplate",
+    "babel",
+    "snippod",
+    "demo",
+    "webapplication",
+    "fullstack",
+    "semanticui"
+  ]
+}

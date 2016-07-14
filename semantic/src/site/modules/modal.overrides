@@ -1,0 +1,35 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+/* Modal Width */
+@media only screen and (min-width : 450px) {
+  .dialog.ui.small.modal {
+    width: 450px;
+    margin: 0em 0em 0em -225px;
+  }
+}
+
+//@media only screen and (max-width : 450px) {
+//  .dialog.ui.small.modal {
+//    top: 225px;
+//    margin-top: 0.1em;
+//  }
+//}
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+     Close
+---------------*/
+
+.ui.modal > .close {
+  top: @innerCloseTop;
+  right: @innerCloseRight;
+}
+.ui.modal > .close:hover {
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}

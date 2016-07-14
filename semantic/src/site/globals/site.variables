@@ -1,0 +1,147 @@
+/****************************************
+  Snippod-Boilerplate Global Variables
+*****************************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName          : 'Noto Sans';
+@fontNameForKR     : 'Noto Sans KR';
+@fontSmoothing     : antialiased;
+
+@headerFont        : @fontName, @fontNameForKR, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@pageFont          : @fontName, @fontNameForKR, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@googleFontName    : 'Noto+Sans';
+@importGoogleFonts : true;
+@googleFontSizes   : '400,700,400italic,700italic';
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+
+@importGoogleFontsEarlyAccess : true;
+@googleFontsEarlyAccessFileName : 'notosanskr.css';
+
+
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize   : 14px;
+
+/* The size of page text  */
+@fontSize : 14px;
+
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+@relativeBorderRadius: @relative4px;
+@absoluteBorderRadius: @4px;
+
+@defaultBorderRadius: @absoluteBorderRadius;
+
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor        : @blue;
+@secondaryColor      : @black;
+
+@lightPrimaryColor   : @lightBlue;
+@lightSecondaryColor : @lightBlack;
+
+
+/*-------------------
+        Page
+--------------------*/
+
+@pageBackground      : @lightGrey;
+@pageOverflowX       : hidden;
+
+@lineHeight          : 1.4285em;
+@textColor           : rgba(0, 0, 0, 0.77);
+
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : #4183C4;
+@linkUnderline       : none;
+@linkHoverColor      : darken(saturate(@linkColor, 20), 100, relative);
+@linkHoverUnderline  : @linkUnderline;
+
+@invertedLinkColor           : #4183C4;
+@invertedLinkHoverColor      : lighten(saturate(@invertedLinkColor, 20), 15, relative);
+
+@invertedBlueLinkColor           : #CFE0F1;
+@invertedBlueLinkHoverColor      : darken(saturate(@invertedBlueLinkColor, 20), 15, relative);
+
+/*-------------------
+     Brand Colors
+--------------------*/
+
+@snippodColor   : #0077BE;
+@snippodHoverColor   : saturate(darken(@snippodColor, 5), 10, relative);
+@snippodFocusColor   : saturate(darken(@snippodColor, 8), 20, relative);
+@snippodDownColor   : darken(@snippodColor, 10);
+@snippodActiveColor   : saturate(darken(@snippodColor, 5), 15, relative);
+
+
+/*-------------------
+        Paths
+--------------------*/
+
+/* For source only. Modified in gulp for dist */
+// Very important if build by semantic.less
+//@fontPath  : '../assets/fonts';
+
+/*-------------------
+       Accents
+--------------------*/
+
+@floatingShadow:
+        0px 2px 4px 0px rgba(34, 36, 38, 0.12),
+        0px 2px 10px 0px rgba(34, 36, 38, 0.08)
+;
+
+@floatingHoverShadow:
+        0px 2px 8px 0px darken(rgba(34, 36, 38, 0.12),20),
+        0px 2px 14px 0px darken(rgba(34, 36, 38, 0.08),20)
+;
+
+@borderWidth: 1px;
+@borderShadow: 0px 0px 0px @borderWidth @strongBorderColor inset;
+
+@floatingBoxShadow:
+        @borderShadow,
+        @floatingShadow
+;
+
+@floatingBoxHoverShadow:
+  @borderShadow,
+  @floatingHoverShadow
+;
+
+/*****************************************
+          Custom Varibales
+*****************************************/
+/*-------------------
+     Toast Colors
+--------------------*/
+
+@toastColor   : @blueBackground;
+@toastSuccessColor   : @successBackgroundColor;
+@toastErrorColor   : @errorBackgroundColor;
+@toastInfoColor   : @infoBackgroundColor;
+@toastWarningColor   : @warningBackgroundColor;

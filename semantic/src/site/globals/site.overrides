@@ -1,0 +1,306 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+#full-screen {
+  height: 100vh;
+}
+
+.sub-app.ui.sidebar {
+  overflow: auto;
+}
+
+#main-app {
+  height: 100vh;
+  overflow: auto;
+}
+
+nav {
+  height: 4em;
+  white-space: nowrap;
+}
+
+#wrap-content {
+  min-height: 100vh;
+  padding-bottom: 14rem;
+  padding-top: 3.9rem; /* 4rem is logically right. but some margin is occured' */
+}
+
+#main-content {
+  margin-bottom: 2rem;
+}
+
+#footer {
+  width: 100%;
+  margin-top: -14rem; /* negative value of footer height */
+  height: 14rem;
+  clear: both;
+}
+
+.main-container {
+  margin-top: @headerTopMargin; /* top postion is navbar bottom by #wrap-content padding-top */
+}
+
+.modal-container {
+  margin-top: 9% ; /* vertically more middle */
+}
+
+@media only screen and (min-height : 578px) {
+  .modal-container {
+    margin-top: 14% ; /* vertically more middle */
+  }
+}
+
+.main-top-margin {
+  margin-top: @headerTopMargin; /* top postion is navbar bottom by #wrap-content padding-top */
+}
+
+.content-top-margin {
+  margin-top: @headerLineHeight
+}
+
+#popup-modal-window {
+  position: fixed;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  background: transparent;
+}
+
+#popup-modal-window-inner-container {
+  background: transparent;
+  padding: 0 !important;
+  margin: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: auto;
+}
+
+#popup-modal-window-close-button {
+  color: rgba(220, 220, 220, 0.7);
+}
+
+/*******************************
+             Text
+*******************************/
+/*-------------------
+        Links
+--------------------*/
+
+.inverted a {
+  color: @invertedLinkColor;
+}
+.inverted a:hover {
+  color: @invertedLinkHoverColor;
+}
+
+.inverted.blue a {
+  color: @invertedBlueLinkColor;
+}
+.inverted.blue a:hover {
+  color: @invertedBlueLinkHoverColor;
+  text-decoration: underline;
+}
+
+/*-------------------
+     Custom Effect
+--------------------*/
+//FIXME: This is dependant on a context.
+.after-gradient-effect {
+  content: " ";
+  width: 4em;
+  height: 1.8em;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(56%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+  transition:all .2s;
+}
+
+/*******************************
+     Import the others
+*******************************/
+
+//@import "./animation/animation.overrides";
+
+
+/*******************************
+        React Animation
+*******************************/
+// Reference https://facebook.github.io/react/docs/animation.html
+
+/*-------------------
+        List
+--------------------*/
+.list-enter {
+  opacity: 0.01;
+}
+
+.list-enter.list-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.list-leave {
+  opacity: 1;
+}
+
+.list-leave.list-leave-active {
+  opacity: 0.01;
+  transition: opacity .3s ease-in;
+}
+
+.list-appear {
+  opacity: 0.01;
+}
+
+.list-appear.list-appear-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+
+
+/*******************************
+         Custom Overrides
+*******************************/
+
+/*-------------------
+  External Libraries
+--------------------*/
+
+/* Support */
+// For react-toastr https://github.com/tomchentw/react-toastr/
+@import url("../../../node_modules/toastr/build/toastr.css");
+@import url("../../../node_modules/animate.css/animate.css");
+
+//Customized Toastr Style by this.
+//https://github.com/CodeSeven/toastr
+//override the CSS/LESS for #toast-container .toast-close-button
+.toast-title {
+  font-weight: bold;
+  font-family: @headerFont;
+  font-weight: @headerFontWeight;
+}
+.toast-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.toast-message a,
+.toast-message label {
+  color: @highlightColor;
+}
+
+.toast-close-button {
+  cursor: pointer;
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  color: @highlightColor;
+  font-weight: bold;
+  opacity: 0.2;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  filter: alpha(opacity=60);
+}
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+}
+
+#toast-container > div {
+  position: relative;
+  min-height: 1em;
+  pointer-events: auto;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 15px 15px 15px 68px;
+  width: 300px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: @defaultBorderRadius;
+  -moz-box-shadow: @floatingBoxShadow;
+  -webkit-box-shadow: @floatingBoxShadow;
+  box-shadow: @floatingBoxShadow;
+  color: @highlightColor;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
+}
+
+#toast-container > :hover {
+  -moz-box-shadow: @floatingBoxHoverShadow;
+  -webkit-box-shadow: @floatingBoxHoverShadow;
+  box-shadow: @floatingBoxHoverShadow;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+
+#toast-container > .toast:before {
+  position: absolute;
+  left: 0.45em;
+  top: 0.62em;
+  font-family: Icons;
+  font-size: 3em;
+  opacity: 0.8;
+
+}
+
+#toast-container > .toast-warning:before {
+  content: "\f003";
+}
+#toast-container > .toast-error:before {
+  content: "\f001";
+}
+#toast-container > .toast-info:before {
+  content: "\f005";
+}
+#toast-container > .toast-success:before {
+  content: "\f01c";
+}
+
+.toast {
+  background-color: @toastColor;
+}
+.toast-success {
+  background-color: @toastSuccessColor;
+  &:before, div {
+    color: @positiveTextColor;
+  }
+}
+.toast-error {
+  background-color: @toastErrorColor;
+  &:before, div {
+    color: @negativeTextColor;
+  }
+}
+.toast-info {
+  background-color: @toastInfoColor;
+  &:before, div {
+    color: @infoTextColor;
+  }
+}
+.toast-warning {
+  background-color: @toastWarningColor;
+  &:before, div {
+    color: @warningHeaderColor;
+  }
+}
+
+
