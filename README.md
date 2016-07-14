@@ -4,7 +4,7 @@
 
 ## Overview
 
-[**Snippod-Starter-Demo-App-Front**](https://github.com/shalomeir/snippod-starter-demo-app-front) is a **server part** of snippod-starter demo application. A 'snippod-starter-demo-app' is a 'Full Stack Single Page Application' for the starter who want to be a web application developer.
+[**Snippod-Starter-Demo-App-Front**](https://github.com/shalomeir/snippod-starter-demo-app-front) is a **front part** of snippod-starter demo application. A 'snippod-starter-demo-app' is a 'Full Stack Single Page Application' for the starter who want to be a web application developer.
 This repository code is based on [React](http://facebook.github.io/react/) and [Redux](https://github.com/gaearon/redux).
 You can check out the hosted version [**DEMO**](http://snippod-boilerplate-dev.elasticbeanstalk.com/) at [http://snippod-boilerplate-dev.elasticbeanstalk.com/](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
 
@@ -41,12 +41,12 @@ After node packages are installed, automatically build a semantic ui for styling
 
 ## Running Dev Server
 
-### Dev local node server interacted with public shared REST API server hosted by [Snippod Inc.](https://www.snippod.com).
+#### Dev local node server interacted with public shared REST API server hosted by [Snippod Inc.](https://www.snippod.com).
 ```
 npm run dev
 ```
 
-### Dev local node server interacted with localhost REST API server ['snippod-starter-demo-app-server'](https://github.com/shalomeir/snippod-starter-demo-app-server) which should be run first in your computer.
+#### Dev local node server interacted with localhost REST API server ['snippod-starter-demo-app-server'](https://github.com/shalomeir/snippod-starter-demo-app-server) which should be run first in your computer.
 ```
 npm run dev-local
 ```
@@ -102,4 +102,4 @@ Contributions, questions and comments are all welcome and encouraged.
 ## License
 [MIT License](http://opensource.org/licenses/MIT).
 
-Copyright 2016 [Snippod Inc.](https://www.snippod.com/).
+Copyright 2016 [Snippod Inc.](https://www.snippod.com/)
