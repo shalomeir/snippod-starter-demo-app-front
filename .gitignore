@@ -1,14 +1,23 @@
 .DS_Store
 .idea
 
+*.log
+.tmp
+
 node_modules/
 dist/
 semantic/dist/
 semantic/examples/
 semantic/Semantic-UI-Docs/
+!semantic/tasks/build
 _translations
 *.iml
 webpack-stats.json
 webpack-assets.json
 npm-debug.log
 auto_default_code/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
