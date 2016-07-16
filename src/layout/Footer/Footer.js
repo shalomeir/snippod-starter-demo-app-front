@@ -20,8 +20,8 @@ const i18n = defineMessages({
 export default class Footer extends Component {
 
   render() {
-    //const repoGitLink = (<a href="https://github.com/shalomeir/snippod-boilerplate" target="_blank">Github</a>);
-    const githubButton = (<iframe src="https://ghbtns.com/github-btn.html?user=shalomeir&repo=snippod-boilerplate&type=star&count=true" frameBorder="0" scrolling="0" width="90px" height="20px"
+    //const repoGitLink = (<a href="https://github.com/shalomeir/snippod-starter-demo-app" target="_blank">Github</a>);
+    const githubButton = (<iframe src="https://ghbtns.com/github-btn.html?user=shalomeir&repo=snippod-starter-demo-app&type=star&count=true" frameBorder="0" scrolling="0" width="90px" height="20px"
                                   style={styles.githubButton} key="github-iframe-button"/>);
 
     return (

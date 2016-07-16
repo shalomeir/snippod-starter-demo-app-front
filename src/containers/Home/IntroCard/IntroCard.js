@@ -49,9 +49,9 @@ export default class IntroCard extends Component {
     const redux = (<span className="ui blue small label link"
                       href="http://redux.js.org/"
                       target="_blank" onClick={hrefClick}>Redux</span>);
-    const gitHubEn = (<a href="https://github.com/shalomeir/snippod-boilerplate"
+    const gitHubEn = (<a href="https://github.com/shalomeir/snippod-starter-demo-app"
                          target="_blank" style={radiumStyles.bold}>github repository</a>);
-    const gitHubKr = (<a href="https://github.com/shalomeir/snippod-boilerplate"
+    const gitHubKr = (<a href="https://github.com/shalomeir/snippod-starter-demo-app"
                          target="_blank" style={radiumStyles.bold}>깃허브 저장소</a>);
 
     return (
