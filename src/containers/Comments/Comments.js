@@ -105,7 +105,8 @@ export default class Comments extends Component {
       this._loadCommentsByPost(nextProps.type, nextProps.option);
     } else if (!nextProps.commentsPagination.isFetching &&
       this.props.commentsPagination !== nextProps.commentsPagination &&
-      !nextProps.commentsPagination.pageCount) {
+      !nextProps.commentsPagination.pageCount &&
+      !nextProps.commentsPagination.isFetchFailed) {
       this._loadComments(nextProps.type, nextProps.option);
     }
   }

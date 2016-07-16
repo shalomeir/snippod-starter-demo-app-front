@@ -9,8 +9,8 @@ const styles = require('./FooterStyles');
 const i18n = defineMessages({
   footerMessage: {
     id: 'layout.footer.footerMessage',
-    defaultMessage: 'This is a open source application. Go to the repository on {repoGitLink}.'
-  },
+    defaultMessage: 'This is a open source application. Go to the repository.'
+  }
 });
 
 @connect(
@@ -20,7 +20,7 @@ const i18n = defineMessages({
 export default class Footer extends Component {
 
   render() {
-    const repoGitLink = (<a href="https://github.com/shalomeir/snippod-boilerplate" target="_blank">Github</a>);
+    //const repoGitLink = (<a href="https://github.com/shalomeir/snippod-boilerplate" target="_blank">Github</a>);
     const githubButton = (<iframe src="https://ghbtns.com/github-btn.html?user=shalomeir&repo=snippod-boilerplate&type=star&count=true" frameBorder="0" scrolling="0" width="90px" height="20px"
                                   style={styles.githubButton} key="github-iframe-button"/>);
 
@@ -29,7 +29,7 @@ export default class Footer extends Component {
         <div className="ui center aligned container">
           <img src="/images/logo.png" className="ui centered mini image" />
           <div className="ui horizontal inverted small list" style={styles.lineHeight}>
-            <FormattedMessage {...i18n.footerMessage} values={{ repoGitLink }}/>
+            <FormattedMessage {...i18n.footerMessage} />
             &nbsp; &nbsp; {githubButton}
           </div>
         </div>

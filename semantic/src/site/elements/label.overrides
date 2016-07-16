@@ -1,3 +1,17 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.label.link {
+  cursor: pointer;
+}
+
+.ui.label.link:hover {
+  text-decoration: underline;
+}
+
+.ui.blue.label.link:hover {
+  background-color: @blueHover !important;
+  border-color: @blueHover !important;
+  color: @blueHoverTextColor !important;
+}

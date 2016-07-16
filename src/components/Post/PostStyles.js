@@ -32,10 +32,10 @@ const styles = {
   },
 
   title: {
-    fontSize: '1.1em',
+    fontSize: '1em',
     overflow: 'hidden',
     marginTop: '0 !important',
-    whiteSpace: 'pre',
+    whiteSpace: 'pre'
   },
 
   meta: {

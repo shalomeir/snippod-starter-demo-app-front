@@ -50,7 +50,11 @@ const radiumStyles = {
   },
 
   floatLeft: {
-    float: 'left',
+    float: 'left'
+  },
+
+  bold: {
+    fontWeight: 'bold'
   }
 
 };

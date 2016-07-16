@@ -84,7 +84,7 @@
 @invertedLinkColor           : #4183C4;
 @invertedLinkHoverColor      : lighten(saturate(@invertedLinkColor, 20), 15, relative);
 
-@invertedBlueLinkColor           : #CFE0F1;
+@invertedBlueLinkColor           : #FFFFFF;
 @invertedBlueLinkHoverColor      : darken(saturate(@invertedBlueLinkColor, 20), 15, relative);
 
 /*-------------------

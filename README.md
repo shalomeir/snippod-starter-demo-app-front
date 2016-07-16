@@ -24,7 +24,7 @@ We made this using these technologies.
 ## Getting Started
 Preliminaries :
 * npm v2.15.5 or higher
-* Node v4.4.6 (We highly recommend [Node Version Manager (NVM)](https://github.com/creationix/nvm)
+* Node v4.4.6 - We highly recommend [Node Version Manager (NVM)](https://github.com/creationix/nvm)
 
 You have to git clone this repository.
 ```

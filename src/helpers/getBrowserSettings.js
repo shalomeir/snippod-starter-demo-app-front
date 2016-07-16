@@ -3,7 +3,7 @@ import { getQueryParameters } from 'utils/handleString';
 export const getBrowserLang = () => {
   let lang = 'en';
   if (!__SERVER__) {
-    lang = navigator.language;
+    lang = window.navigator.language || window.navigator.userLanguage;
     //lang = lang[1] ? `${lang[0]}-${lang[1].toUpperCase()}` : navigator.language;
     lang = lang.split('-')[0];
   }
@@ -13,7 +13,7 @@ export const getBrowserLang = () => {
 export const getBrowserLanguage = () => {
   let language = 'en_US';
   if (!__SERVER__) {
-    language = navigator.language;
+    language = window.navigator.languages ? window.navigator.languages[0] : window.navigator.language || window.navigator.userLanguage;
     //lang = lang[1] ? `${lang[0]}-${lang[1].toUpperCase()}` : navigator.language;
   }
   return language;
@@ -47,7 +47,7 @@ export const getDefaultLang = () => {
   if (!__SERVER__ && window.location) {
     lang = getQueryParameters(window.location.search).language;
     if (!lang) {
-      lang = navigator.language;
+      lang = window.navigator.language || window.navigator.userLanguage;
     }
     lang = lang.split('-')[0];
   }

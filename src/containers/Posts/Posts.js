@@ -101,7 +101,8 @@ export default class Posts extends Component {
       this._loadPosts(nextProps.type, nextProps.option);
     } else if (!nextProps.postsPagination.isFetching &&
       this.props.postsPagination !== nextProps.postsPagination &&
-      !nextProps.postsPagination.pageCount) {
+      !nextProps.postsPagination.pageCount &&
+      !nextProps.postsPagination.isFetchFailed) {
       this._loadPosts(nextProps.type, nextProps.option);
     }
   }

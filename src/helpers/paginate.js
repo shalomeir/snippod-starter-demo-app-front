@@ -29,7 +29,8 @@ export default function paginate({ types, subTypes, mapActionToKey }) {
     isFetching: false,
     nextPageUrl: undefined,
     pageCount: 0,
-    ids: []
+    ids: [],
+    isFetchFailed: false
   }, action) {
     switch (action.type) {
       case requestType:
@@ -45,7 +46,8 @@ export default function paginate({ types, subTypes, mapActionToKey }) {
         });
       case failureType:
         return merge({}, state, {
-          isFetching: false
+          isFetching: false,
+          isFetchFailed: true
         });
       case addItemToTopType:
         return merge({}, state, {

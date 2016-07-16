@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Radium from 'radium';
 import classNames from 'classnames';
+import { hrefClick } from 'utils/handleEvent';
 
 import { defineMessages, FormattedMessage } from 'react-intl';
 
@@ -19,7 +20,7 @@ const styles = {
 const i18n = defineMessages({
   helloSnippod: {
     id: 'home.introCard.helloSnippod',
-    defaultMessage: 'Welcome to Snippod\'s Boilerplate Demo Application!'
+    defaultMessage: 'Welcome to Snippod\'s Starter Demo Application!'
   },
 
   helloSnippodSubText: {
@@ -39,19 +40,19 @@ export default class IntroCard extends Component {
     const { style } = this.props;
 
     //FixMe: Sometimes, ui class dom is not clickable by semantic problem.
-    const djangoRestFramework = (<a className="ui blue small label"
+    const djangoRestFramework = (<span className="ui blue small label link"
                                     href="http://www.django-rest-framework.org/"
-                                    target="_blank">django REST framework</a>);
-    const react = (<a className="ui blue small label"
+                                    target="_blank" onClick={hrefClick}>django REST framework</span>);
+    const react = (<span className="ui blue small label link"
                       href="https://facebook.github.io/react/index.html"
-                      target="_blank">React</a>);
-    const redux = (<a className="ui blue small label"
+                      target="_blank" onClick={hrefClick}>React</span>);
+    const redux = (<span className="ui blue small label link"
                       href="http://redux.js.org/"
-                      target="_blank">Redux</a>);
+                      target="_blank" onClick={hrefClick}>Redux</span>);
     const gitHubEn = (<a href="https://github.com/shalomeir/snippod-boilerplate"
-                         target="_blank">github repository</a>);
+                         target="_blank" style={radiumStyles.bold}>github repository</a>);
     const gitHubKr = (<a href="https://github.com/shalomeir/snippod-boilerplate"
-                         target="_blank">깃허브 저장소</a>);
+                         target="_blank" style={radiumStyles.bold}>깃허브 저장소</a>);
 
     return (
       <div className="intro-card ui secondary inverted blue padded text segment center aligned"

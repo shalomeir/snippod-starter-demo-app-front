@@ -3,7 +3,7 @@ export default {
   //Containers
   //DialogWindows
   "home.helloWorld": "한글로 보여야 되요 여긴 홈이고 헬로우 월드~",
-  "home.introCard.helloSnippod": "스닙팟-보일러플레이트 데모 어플리케이션",
+  "home.introCard.helloSnippod": "스닙팟-스타터-데모 어플리케이션",
   "home.introCard.helloSnippodSubText": "본 사이트는 풀스택 데모 웹앱으로 {djangoRestFramework}과" +
     " {react} + {redux}를 이용하여 만들어졌습니다. 자세한 코드는 {gitHubKr}를 참조하세요.",
 
@@ -96,7 +96,7 @@ export default {
   "layout.sideBar.settingButton": "셋팅",
   "layout.sideBar.loginButton": "로그인을 먼저 해 주세요.",
   "layout.sideBar.footerMessage": "깃허브 저장소에 방문해 보세요.",
-  "layout.footer.footerMessage": "본 데모는 오픈소스 입니다. 깃허브 저장소 {repoGitLink} 에 방문해 보세요.",
+  "layout.footer.footerMessage": "본 데모는 오픈소스 입니다. 깃허브 저장소에 방문해 보세요.",
   "layout.toastrMessages.testMessage": "토스트 메시지는 팝업 되는 메시지로 글로벌 입니다.",
 
   //logMessages for validation errors

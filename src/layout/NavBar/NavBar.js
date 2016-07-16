@@ -78,10 +78,10 @@ export default class NavBar extends Component {
       <Link to="/" href="#" className="header item">
         <img className="logo" src="/images/logo.png" style={styles.logoImage}/>
         <MediaQuery maxWidth={responsivePoint['@tabletLesspoint']}>
-          <header className="header" style={styles.title}> snippod{(<br/>)}boilerplate </header>
+          <header className="header" style={styles.title}> Snippod{(<br/>)}Starter-Demo </header>
         </MediaQuery>
         <MediaQuery minWidth={responsivePoint['@tabletBreakpoint']}>
-          <header className="header" style={styles.title}> snippod-boilerplate </header>
+          <header className="header" style={styles.title}> Snippod-Starter-Demo </header>
         </MediaQuery>
       </Link>
     );
