@@ -4,7 +4,7 @@ const defaults = {
 
   apiPath: '/api/v1',
 
-  apiHost: 'snippod-staging-rest.ap-northeast-2.elasticbeanstalk.com',
+  apiHost: 'snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com/',
 
   apiPort: 8000,
 

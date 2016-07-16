@@ -53,7 +53,8 @@
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
         "PORT": 8081,
-        "APIPORT": 8000
+        "APIPORT": 8000,
+        "APIHOST": "snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com"
       }
     },
     "start-dev": {
@@ -63,7 +64,7 @@
         "NODE_ENV": "development",
         "PORT": 3000,
         "APIPORT": 8000,
-        "APIHOST": "snippod-staging-rest.ap-northeast-2.elasticbeanstalk.com"
+        "APIHOST": "snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com"
       }
     },
     "start-dev-local": {
@@ -84,7 +85,7 @@
         "NODE_ENV": "development",
         "PORT": 3000,
         "APIPORT": 8000,
-        "APIHOST": "snippod-staging-rest.ap-northeast-2.elasticbeanstalk.com"
+        "APIHOST": "snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com"
       }
     },
     "watch-client-local": {
