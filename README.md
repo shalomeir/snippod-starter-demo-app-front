@@ -14,6 +14,7 @@ We made this using these technologies.
 
 * [React](http://facebook.github.io/react/)
 * [Redux](https://github.com/gaearon/redux)
+* [Redux Form](http://redux-form.com/)
 * [Semantic UI](http://semantic-ui.com/)
 * [Radium](https://github.com/FormidableLabs/radium)
 * [React Router](https://github.com/reactjs/react-router) and [react-router-redux](https://github.com/reactjs/react-router-redux)
