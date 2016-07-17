@@ -6,7 +6,7 @@
 
 [**Snippod-Starter-Demo-App-Front**](https://github.com/shalomeir/snippod-starter-demo-app-front) is a **front part** of snippod-starter demo application. A [**Snippod-Starter-Demo-App**](https://github.com/shalomeir/snippod-starter-demo-app) is a 'Full Stack Single Page Application' for the starter who want to be a web application developer.
 This repository code is based on [React](http://facebook.github.io/react/) and [Redux](https://github.com/gaearon/redux).
-You can check out the hosted version [**DEMO**](http://snippod-boilerplate-dev.elasticbeanstalk.com/) at [http://snippod-boilerplate-dev.elasticbeanstalk.com/](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
+You can check out the hosted version [**DEMO**](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/) at [http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/).
 
 ![Alt Stack Diagram](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoAppFrontArchitecture.png "Stack Diagram")
 
@@ -80,9 +80,9 @@ More information is available at [**this blog post**](http://www.shalomeir.com/2
 
 ## Demo
 
-A demonstration of this app can be seen [here](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
+A demonstration of this app can be seen [here](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/).
 
-[![Alt App Demo](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoApp_Capture_En_160717.png "App Demo")](http://snippod-boilerplate-dev.elasticbeanstalk.com/)
+[![Alt App Demo](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoApp_Capture_En_160717.png "App Demo")](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/)
 
 
 ## FAQ (from 'react-redux-universal-hot-example')
