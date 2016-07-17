@@ -71,7 +71,7 @@ We'd like to apply node server for react server-side rendering, but didn't make 
 
 ## Demo
 
-A demonstration of this app can be seen [here](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
+A demonstration of this app can be seen [here](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/).
 
 [![Alt App Demo](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoApp_Capture_En_160717.png "App Demo")](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/)
 
