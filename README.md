@@ -1,4 +1,4 @@
-# **Snippod-Starter-Demo-App-Front**
+# **Snippod-Starter-Demo-App-Front Tutorial** 
 
 [![Join the chat at https://gitter.im/shalomeir/snippod-boilerplate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/shalomeir/snippod-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -6,9 +6,9 @@
 
 [**Snippod-Starter-Demo-App-Front**](https://github.com/shalomeir/snippod-starter-demo-app-front) is a **front part** of snippod-starter demo application. A [**Snippod-Starter-Demo-App**](https://github.com/shalomeir/snippod-starter-demo-app) is a 'Full Stack Single Page Application' for the starter who want to be a web application developer.
 This repository code is based on [React](http://facebook.github.io/react/) and [Redux](https://github.com/gaearon/redux).
-You can check out the hosted version [**DEMO**](http://snippod-boilerplate-dev.elasticbeanstalk.com/) at [http://snippod-boilerplate-dev.elasticbeanstalk.com/](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
 
-![Alt Stack Diagram](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoAppFrontArchitecture.png "Stack Diagram")
+This [**tutorial**](https://github.com/shalomeir/snippod-starter-demo-app-front/tree/tutorial) branch is the starting point of study web application.
+Please checkout at the starting point 'STEP00' tag. And  
 
 ## Base Repository, Module
   
@@ -16,9 +16,7 @@ We made this using these technologies.
 
 * [React](http://facebook.github.io/react/)
 * [Redux](https://github.com/gaearon/redux)
-* [Redux Form](http://redux-form.com/)
 * [Semantic UI](http://semantic-ui.com/)
-* [Radium](https://github.com/FormidableLabs/radium)
 * [React Router](https://github.com/reactjs/react-router) and [react-router-redux](https://github.com/reactjs/react-router-redux)
 * [SuperAgent](https://visionmedia.github.io/superagent/)
 * [Webpack](https://webpack.github.io/)
@@ -31,9 +29,10 @@ Preliminaries :
 * npm v2.15.5 or higher
 * Node v4.4.6 - We highly recommend [Node Version Manager (NVM)](https://github.com/creationix/nvm)
 
-You have to git clone this repository.
+You have to git clone this repository and checkout 'STEP00' tag.
 ```
-git clone https://github.com/shalomeir/snippod-starter-demo-app-front
+git clone git@github.com:shalomeir/snippod-starter-demo-app-front.git
+git checkout STEP00
 ```
 
 ## Installation
@@ -60,29 +59,19 @@ Whatever you execute a development server, first executing time is a little time
 After then, [react-hot-loader](https://github.com/gaearon/react-hot-loader) and [redux-devtools](https://github.com/gaearon/redux-devtools) are executed with a development server. So you can easily fix and debug a code. You don't needed to reboot a server for development. 
 
 
-## Building and Running Production Server
-
-```
-npm run build
-npm run start
-```
-
 ## Description
 Almost main javascript source are located [**'./src'** directory](https://github.com/shalomeir/snippod-boilerplate/tree/master/snippod_webapp/client/scripts).
-Also customized theme semantic ui source are located [**'./semantic/src/site'** directory](https://github.com/shalomeir/snippod-boilerplate/tree/master/snippod_webapp/client/scripts). All semantic ui code are merged by webpack. 
-At some point, [Inline Styles](docs/InlineStyles.md) is injected by [Radium](https://github.com/FormidableLabs/radium).
+A starting point of this [React](http://facebook.github.io/react/) application is located [**'./src/layout/App.js'**](https://github.com/shalomeir/snippod-starter-demo-app-front/blob/STEP00/src/layout/App.js).
+
 What initially gets run by [Express](http://expressjs.com/) is `bin/server.js`, which does little more than enable ES6 and ES7 awesomeness in the server-side node code. It then initiates `server.js`.
 We'd like to apply node server for react server-side rendering, but didn't make perfectly yet.
-A front side ajax call usually doing in Actions. We use [Ducks](https://github.com/erikras/ducks-modular-redux) for handling actionTypes and actions, reducer.
-Almost front source architecture is based on ['React Redux Universal Hot Example'](https://github.com/erikras/react-redux-universal-hot-example).
 
-More information is available at [**this blog post**](http://www.shalomeir.com/2015/05/snippod-boilerplate-1-full-stack-react-flux-django/) written in **Korean**.
 
 ## Demo
 
 A demonstration of this app can be seen [here](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
 
-[![Alt App Demo](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoApp_Capture_En_160717.png "App Demo")](http://snippod-boilerplate-dev.elasticbeanstalk.com/)
+[![Alt App Demo](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoApp_Capture_En_160717.png "App Demo")](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/)
 
 
 ## FAQ (from 'react-redux-universal-hot-example')
