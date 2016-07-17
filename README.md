@@ -41,6 +41,7 @@ And we recommend to use a [Chrome DevTools](https://developer.chrome.com/devtool
 
 ```
 npm install
+npm run build:semantic
 ```
 
 After node packages are installed, automatically build a semantic ui for styling and bundling by webpack. A module bundling by webpack process is a little time consuming task (about 60 sec).
