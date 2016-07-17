@@ -5,7 +5,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 //Can go away when react 1.0 release
 //Check this repo:
 //https://github.com/zilverline/react-tap-event-plugin
-injectTapEventPlugin();
+//injectTapEventPlugin();
 
 export default class App extends Component {
   static propTypes = {

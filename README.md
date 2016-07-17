@@ -8,7 +8,7 @@
 This repository code is based on [React](http://facebook.github.io/react/) and [Redux](https://github.com/gaearon/redux).
 
 This [**tutorial**](https://github.com/shalomeir/snippod-starter-demo-app-front/tree/tutorial) branch is the starting point of study web application.
-Please checkout at the starting point 'STEP00' tag. And  
+Please checkout at the starting point 'STEP01' tag. And  
 
 ## Base Repository, Module
   
@@ -29,10 +29,10 @@ Preliminaries :
 * npm v2.15.5 or higher
 * Node v4.4.6 - We highly recommend [Node Version Manager (NVM)](https://github.com/creationix/nvm)
 
-You have to git clone this repository and checkout 'STEP00' tag.
+You have to git clone this repository and checkout 'STEP01' tag.
 ```
 git clone git@github.com:shalomeir/snippod-starter-demo-app-front.git
-git checkout STEP00
+git checkout STEP01
 ```
 
 And we recommend to use a [Chrome DevTools](https://developer.chrome.com/devtools) with [**React Developer tools**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for debugging.
@@ -64,7 +64,7 @@ After then, [react-hot-loader](https://github.com/gaearon/react-hot-loader) and 
 
 ## Description
 Almost main javascript source are located [**'./src'** directory](https://github.com/shalomeir/snippod-boilerplate/tree/master/snippod_webapp/client/scripts).
-A starting point of this [React](http://facebook.github.io/react/) application is located [**'./src/layout/App.js'**](https://github.com/shalomeir/snippod-starter-demo-app-front/blob/STEP00/src/layout/App.js).
+A starting point of this [React](http://facebook.github.io/react/) application is located [**'./src/layout/App.js'**](https://github.com/shalomeir/snippod-starter-demo-app-front/blob/STEP01/src/layout/App.js).
 
 What initially gets run by [Express](http://expressjs.com/) is `bin/server.js`, which does little more than enable ES6 and ES7 awesomeness in the server-side node code. It then initiates `server.js`.
 We'd like to apply node server for react server-side rendering, but didn't make perfectly yet.
