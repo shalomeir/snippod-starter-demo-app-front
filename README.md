@@ -8,7 +8,9 @@
 This repository code is based on [React](http://facebook.github.io/react/) and [Redux](https://github.com/gaearon/redux).
 
 This [**tutorial**](https://github.com/shalomeir/snippod-starter-demo-app-front/tree/tutorial) branch is the starting point of study web application.
-Please checkout at the starting point 'STEP01' tag. And  
+Please checkout at the starting point 'STEP01' tag.
+
+More information about setting for web app development by this tutorial is [**here**](https://docs.google.com/document/d/1PPooko0uzUanYZMwKrEUXUWMD3FXCarKhVxGq5_Kip0/edit?usp=sharing) **(Korean)**. 
 
 ## Base Repository, Module
   
