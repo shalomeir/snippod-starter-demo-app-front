@@ -35,6 +35,8 @@ git clone git@github.com:shalomeir/snippod-starter-demo-app-front.git
 git checkout STEP00
 ```
 
+And we recommend to use a [Chrome DevTools](https://developer.chrome.com/devtools) with [**React Developer tools**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for debugging.
+
 ## Installation
 
 ```
