@@ -15,17 +15,8 @@ function formatUrl(path) {
     // Prepend host and port of the API server to the path.
     return 'http://localhost:' + config.apiPort + apiPath + adjustedPath;
   }
-  if (process.env.NODE_ENV === 'development') {
-    // comment whenever use staging REST API HOST in local.
-
-    if (process.env.APIHOST === 'localhost') {
-      return 'http://localhost:' + apiPort + apiPath + adjustedPath;
-    }
-    //whenever want to use staging rest API Server for api target endpoint.
-    return 'http://' + process.env.APIHOST + apiPath + adjustedPath;
-  }
-  if (process.env.USE_HTTPS) {
-    return 'https://' + process.env.APIHOST + apiPath + adjustedPath;
+  if (process.env.APIHOST === 'localhost') {
+    return 'http://localhost:' + apiPort + apiPath + adjustedPath;
   }
   return 'http://' + process.env.APIHOST + apiPath + adjustedPath;
 }

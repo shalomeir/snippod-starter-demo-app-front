@@ -30,11 +30,11 @@
     "start": "concurrent --kill-others \"npm run start-prod\"",
     "start-prod": "better-npm-run start-prod",
     "build": "gulp --cwd ./semantic build && webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
+    "build-prod": "better-npm-run build-prod",
     "build:semantic": "gulp --cwd ./semantic build",
     "build:i18n": "rimraf _translations && babel --quiet --babelrc .babelrc.i18n src > /dev/null",
     "build:i18n:langs": "npm run build:i18n && babel-node scripts/i18nToXliff.js",
     "clean": "rimraf static/dist && gulp --cwd ./semantic clean",
-    "postinstall": "gulp --cwd ./semantic build && webpack --display-error-details --config webpack/prod.config.js",
     "lint": "eslint -c .eslintrc src api",
     "start-dev": "better-npm-run start-dev -- --nw",
     "start-dev-local": "better-npm-run start-dev-local -- --nw",
@@ -47,14 +47,20 @@
     "test-node-watch": "./node_modules/mocha/bin/mocha $(find api -name '*-test.js') --compilers js:babel-core/register --watch"
   },
   "betterScripts": {
+    "build-prod": {
+      "command": "npm run build",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "production",
+        "APIHOST": "snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com"
+      }
+    },
     "start-prod": {
       "command": "node ./excute/server.js",
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
-        "PORT": 8081,
-        "APIPORT": 8000,
-        "APIHOST": "snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com"
+        "PORT": 8081
       }
     },
     "start-dev": {
@@ -62,9 +68,7 @@
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "development",
-        "PORT": 3000,
-        "APIPORT": 8000,
-        "APIHOST": "snippod-demo-rest.ap-northeast-2.elasticbeanstalk.com"
+        "PORT": 3000
       }
     },
     "start-dev-local": {
@@ -72,9 +76,7 @@
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "development",
-        "PORT": 3000,
-        "APIPORT": 8000,
-        "APIHOST": "localhost"
+        "PORT": 3000
       }
     },
     "watch-client": {
