@@ -20,6 +20,7 @@ We made this using these technologies.
 * [Semantic UI](http://semantic-ui.com/)
 * [Radium](https://github.com/FormidableLabs/radium)
 * [React Router](https://github.com/reactjs/react-router) and [react-router-redux](https://github.com/reactjs/react-router-redux)
+* [React Intl](https://github.com/yahoo/react-intl)
 * [SuperAgent](https://visionmedia.github.io/superagent/)
 * [Webpack](https://webpack.github.io/)
 * [Node.js](https://nodejs.org/en/)
@@ -76,7 +77,6 @@ We'd like to apply node server for react server-side rendering, but didn't make 
 A front side ajax call usually doing in Actions. We use [Ducks](https://github.com/erikras/ducks-modular-redux) for handling actionTypes and actions, reducer.
 Almost front source architecture is based on ['React Redux Universal Hot Example'](https://github.com/erikras/react-redux-universal-hot-example).
 
-More information is available at [**this blog post**](http://www.shalomeir.com/2015/05/snippod-boilerplate-1-full-stack-react-flux-django/) written in **Korean**.
 
 ## Demo
 
