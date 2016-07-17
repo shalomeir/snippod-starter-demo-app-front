@@ -8,6 +8,8 @@
 This repository code is based on [React](http://facebook.github.io/react/) and [Redux](https://github.com/gaearon/redux).
 You can check out the hosted version [**DEMO**](http://snippod-boilerplate-dev.elasticbeanstalk.com/) at [http://snippod-boilerplate-dev.elasticbeanstalk.com/](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
 
+![Alt Stack Diagram](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoAppFrontArchitecture.png "Stack Diagram")
+
 ## Base Repository, Module
   
 We made this using these technologies.
@@ -20,6 +22,8 @@ We made this using these technologies.
 * [React Router](https://github.com/reactjs/react-router) and [react-router-redux](https://github.com/reactjs/react-router-redux)
 * [SuperAgent](https://visionmedia.github.io/superagent/)
 * [Webpack](https://webpack.github.io/)
+* [Node.js](https://nodejs.org/en/)
+* [Express](http://expressjs.com/)
 
 
 ## Getting Started
@@ -67,7 +71,7 @@ npm run start
 Almost main javascript source are located [**'./src'** directory](https://github.com/shalomeir/snippod-boilerplate/tree/master/snippod_webapp/client/scripts).
 Also customized theme semantic ui source are located [**'./semantic/src/site'** directory](https://github.com/shalomeir/snippod-boilerplate/tree/master/snippod_webapp/client/scripts). All semantic ui code are merged by webpack. 
 At some point, [Inline Styles](docs/InlineStyles.md) is injected by [Radium](https://github.com/FormidableLabs/radium).
-What initially gets run is `bin/server.js`, which does little more than enable ES6 and ES7 awesomeness in the server-side node code. It then initiates `server.js`.
+What initially gets run by [Express](http://expressjs.com/) is `bin/server.js`, which does little more than enable ES6 and ES7 awesomeness in the server-side node code. It then initiates `server.js`.
 We'd like to apply node server for react server-side rendering, but didn't make perfectly yet.
 A front side ajax call usually doing in Actions. We use [Ducks](https://github.com/erikras/ducks-modular-redux) for handling actionTypes and actions, reducer.
 Almost front source architecture is based on ['React Redux Universal Hot Example'](https://github.com/erikras/react-redux-universal-hot-example).
@@ -78,8 +82,10 @@ More information is available at [**this blog post**](http://www.shalomeir.com/2
 
 A demonstration of this app can be seen [here](http://snippod-boilerplate-dev.elasticbeanstalk.com/).
 
+[![Alt App Demo](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoApp_Capture_En_160717.png "App Demo")](http://snippod-boilerplate-dev.elasticbeanstalk.com/)
 
-## FAQ
+
+## FAQ (from 'react-redux-universal-hot-example')
 
 #### Help! It doesn't work on Windows! What do I do?
 
