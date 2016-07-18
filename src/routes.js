@@ -6,6 +6,7 @@ import App from 'layout/App';
 import {
   NotFound,
   Home,
+  User,
   Setting
 } from 'containers';
 
@@ -19,6 +20,7 @@ export default (store) => {
       { /* Home (main) route */ }
       <IndexRoute component={Home}/>
 
+      <Route path="/user/:userId" component={User} />
       <Route path="/setting" component={Setting}/>
 
       { /* Catch all route */ }

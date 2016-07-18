@@ -6,8 +6,8 @@ const styles = {
     fontSize: '1.5rem',
     fontStyle: 'italic',
     ['@media (max-width: ' + semanticVar['@tabletLesspoint'] + ')']: {
-      fontSize: '0.9rem',
-    },
+      fontSize: '0.9rem'
+    }
   },
 
   logoImage: {
