@@ -2,21 +2,30 @@ import React, { Component, PropTypes } from 'react';
 import { render } from 'react-dom';
 
 import { StyleRoot } from 'radium';
+import { connect } from 'react-redux';
+import { createSelector } from 'reselect';
 
 import Helmet from 'react-helmet';
 import head from 'constants/head';
 
 import {
+  DialogWindow,
   NavBar,
   Footer,
 } from '.';
 
+@connect(
+  (state) => { return { application: state.application }; }
+)
 export default class App extends Component {
   static propTypes = {
-    children: PropTypes.object.isRequired
+    children: PropTypes.object.isRequired,
+    application: PropTypes.object.isRequired
   };
 
   render() {
+
+    const { application } = this.props;
 
     return (
       <div id="app" className="app">
@@ -32,6 +41,9 @@ export default class App extends Component {
               </div>
               <Footer />
             </div>
+          </div>
+          <div id="background-app" className="background-app">
+            <DialogWindow application={application} />
           </div>
         </StyleRoot>
       </div>
