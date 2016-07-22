@@ -29,7 +29,7 @@ export default function createStore(history, client, data) {
   // TODO: It's not good way. But I coudn't find another way to fix this lang value.
   // State data is created at Server Side. So initial data which is created in server is not use a browser settings.
   if (__CLIENT__) {
-    data.application.lang = defaultLang;
+    //data.application.lang = defaultLang;
   }
   const store = finalCreateStore(reducer, data);
 

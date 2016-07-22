@@ -117,7 +117,7 @@ const toastMessages = defineMessages({
   updateUserCardBody: {
     id: 'toast.updateUserCardBody',
     defaultMessage: '@{username} information were saved.'
-  },
+  }
 
 });
 

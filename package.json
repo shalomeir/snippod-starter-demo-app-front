@@ -142,6 +142,7 @@
     "multireducer": "1.0.2",
     "normalize.css": "3.0.3",
     "normalizr": "2.0.0",
+    "node-sass": "3.8.0",
     "piping": "0.3.0",
     "postcss-loader": "0.8.2",
     "pretty-error": "2.0.0",
