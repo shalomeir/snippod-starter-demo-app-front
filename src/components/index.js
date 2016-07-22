@@ -5,4 +5,4 @@
  *
  */
 
-
+export PostsSortingDropdown from './PostsSortingDropdown/PostsSortingDropdown';
