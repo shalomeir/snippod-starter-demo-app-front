@@ -43,6 +43,9 @@ git checkout LAB01
 
 And we recommend to use a [Chrome DevTools](https://developer.chrome.com/devtools) with [**React Developer tools**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for debugging.
 
+More information about setup development environment is available [**here**](https://docs.google.com/document/d/1PPooko0uzUanYZMwKrEUXUWMD3FXCarKhVxGq5_Kip0/edit?usp=sharing) written in **Korean**.
+
+
 ## Installation
 
 ```
@@ -83,6 +86,8 @@ What initially gets run by [Express](http://expressjs.com/) is `bin/server.js`, 
 We'd like to apply node server for react server-side rendering, but didn't make perfectly yet.
 A front side ajax call usually doing in Actions. We use [Ducks](https://github.com/erikras/ducks-modular-redux) for handling actionTypes and actions, reducer.
 Almost front source architecture is based on ['React Redux Universal Hot Example'](https://github.com/erikras/react-redux-universal-hot-example).
+
+More information about tutorial is provided by google slide at [**here**](https://drive.google.com/file/d/0B9ltVFRI_UMiTjdNYzc5UklQTVU/view?usp=sharing) written in **Korean**.
 
 
 ## Demo
