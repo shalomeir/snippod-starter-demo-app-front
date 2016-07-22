@@ -6,6 +6,7 @@ import App from 'layout/App';
 import {
   NotFound,
   Home,
+  Setting
 } from 'containers';
 
 export default (store) => {
@@ -17,6 +18,8 @@ export default (store) => {
     <Route path="/" component={App}>
       { /* Home (main) route */ }
       <IndexRoute component={Home}/>
+
+      <Route path="/setting" component={Setting}/>
 
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />

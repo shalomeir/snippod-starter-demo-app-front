@@ -26,10 +26,19 @@ export default class NavBar extends Component {
       </Link>
     );
 
+    const rightMenu = (
+      <div className="logged-in right menu" style={styles.menuItem}>
+        <Link to="/setting" className="blue item" style={[styles.menuItem, styles.mobileItem]}>
+          <span className="setting-text">Setting</span>
+        </Link>
+      </div>
+    );
+
     return (
       <nav className={classNames('navbar ui top fixed borderless menu')}>
         <div className="ui container">
           {logo}
+          {rightMenu}
         </div>
       </nav>
     );
