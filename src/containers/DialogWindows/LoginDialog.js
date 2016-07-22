@@ -165,7 +165,7 @@ export default class LoginDialog extends Component {
   }
 
   _closeDialog() {
-    console.log('close login dialog');
+    //console.log('close login dialog');
     $('.ui.login.modal').modal('hide dimmer');
     this.props.closeDialog();
   }

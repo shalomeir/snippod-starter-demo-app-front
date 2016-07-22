@@ -53,7 +53,7 @@ export default class PopupModalWindow extends Component {
   }
 
   _closePopupModal() {
-    console.log('close popup modal window');
+    //console.log('close popup modal window');
     $('#popup-modal-window')
       .modal('hide')
       .modal('hide dimmer');

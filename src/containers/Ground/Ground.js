@@ -82,7 +82,7 @@ export default class Ground extends Component {
   }
 
   checkAuth() {
-    console.log('hello will login check auth');
+    //console.log('hello will login check auth');
     if (this.props.auth.loggedIn) {
       // You already logged in, so do not needed to be here!
       this.props.redirectReplacePath('/');

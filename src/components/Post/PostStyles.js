@@ -57,8 +57,10 @@ const styles = {
     textAlign: 'left',
     wordBreak: 'break-all',
     float: 'right',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
     ['@media (max-width: ' + semanticVar['@tabletLesspoint'] + ')']: {
-      float: 'inherit',
+      float: 'inherit'
     }
   },
 

@@ -4,7 +4,7 @@ const image = 'https://react-redux.herokuapp.com/logo.jpg';
 
 const head = {
   title,
-  titleTemplate: '%s | Snippod Boilerplate ',
+  titleTemplate: '%s | Snippod Starter Demo',
   //base: { 'target': '_blank', 'href': 'http://shalomeir.com/' },
   link: [
     { 'rel': 'canonical', 'href': 'http://shalomeir.com/' },

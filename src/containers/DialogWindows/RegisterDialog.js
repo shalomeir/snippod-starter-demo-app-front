@@ -49,7 +49,7 @@ const i18n = defineMessages({
   },
   registerForwarding1: {
     id: 'registerDialog.loginForwarding1',
-    defaultMessage: 'Already on Snippod-Boilerplate?'
+    defaultMessage: 'Already on Snippod-Starter-Demo-App?'
   },
   registerForwarding2: {
     id: 'registerDialog.loginForwarding2',
@@ -206,7 +206,7 @@ export default class RegisterDialog extends Component {
   }
 
   _closeDialog() {
-    console.log('close register dialog');
+    //console.log('close register dialog');
     $('.ui.register.modal').modal('hide dimmer');
     this.props.closeDialog();
   }
@@ -251,7 +251,7 @@ export default class RegisterDialog extends Component {
               <label><FormattedMessage {...i18n.confirmPassword} /></label>
               <div className="ui left icon confirmPassword input">
                 <i className="lock icon" />
-                <input type="password" name="confirmPassword" placeholder="Confirm Password" ref="confirmPassword" {...confirmPassword} />
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" ref="confirmPassword" {...confirmPassword} autoComplete="off"/>
               </div>
               <div className="ui confirmPassword pointing red basic small label transition hidden" style={styles.errorText}>
                 { errors.confirmPassword && errors.confirmPassword.id ? <FormattedMessage {...errors.confirmPassword} /> : errors.confirmPassword ? errors.confirmPassword : null}
@@ -261,7 +261,7 @@ export default class RegisterDialog extends Component {
               <label><FormattedMessage {...i18n.username} /></label>
               <div className="ui left icon username input">
                 <i className="smile icon" />
-                <input type="text" name="username" placeholder="Username" ref="username" {...username} />
+                <input type="text" name="username" placeholder="Username" ref="username" {...username} autoComplete="off"/>
               </div>
               <div className="ui username pointing red basic small label transition hidden" style={styles.errorText}>
                 { errors.username && errors.username.id ? <FormattedMessage {...errors.username} /> : errors.username ? errors.username : null}
