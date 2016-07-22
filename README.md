@@ -79,6 +79,7 @@ We'd like to apply node server for react server-side rendering, but didn't make 
 A front side ajax call usually doing in Actions. We use [Ducks](https://github.com/erikras/ducks-modular-redux) for handling actionTypes and actions, reducer.
 Almost front source architecture is based on ['React Redux Universal Hot Example'](https://github.com/erikras/react-redux-universal-hot-example).
 
+If you want to follow step by step, go to a [**codelab**](https://github.com/shalomeir/snippod-starter-demo-app-front/tree/codelab) branch of this repository.
 
 ## Demo
 
