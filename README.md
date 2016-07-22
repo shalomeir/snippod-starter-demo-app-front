@@ -6,7 +6,9 @@
 
 [**Snippod-Starter-Demo-App-Front**](https://github.com/shalomeir/snippod-starter-demo-app-front) is a **front part** of snippod-starter demo application. A [**Snippod-Starter-Demo-App**](https://github.com/shalomeir/snippod-starter-demo-app) is a 'Full Stack Single Page Application' for the starter who want to be a web application developer.
 This repository code is based on [React](http://facebook.github.io/react/) and [Redux](https://github.com/gaearon/redux).
-You can check out the hosted version [**DEMO**](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/) at [http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/).
+
+This [**codelab**](https://github.com/shalomeir/snippod-starter-demo-app-front/tree/codelab) branch is the starting point of study web application.
+Please checkout at the starting point 'LAB01' tag and follow the higher tags step by step.
 
 ![Alt Stack Diagram](https://raw.githubusercontent.com/shalomeir/snippod-starter-demo-app-front/master/SnippodStarterDemoAppFrontArchitecture.png "Stack Diagram")
 
@@ -36,7 +38,10 @@ Preliminaries :
 You have to git clone this repository.
 ```
 git clone https://github.com/shalomeir/snippod-starter-demo-app-front
+git checkout LAB01
 ```
+
+And we recommend to use a [Chrome DevTools](https://developer.chrome.com/devtools) with [**React Developer tools**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for debugging.
 
 ## Installation
 
