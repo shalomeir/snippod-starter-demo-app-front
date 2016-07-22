@@ -6,3 +6,4 @@
  */
 
 export PostsSortingDropdown from './PostsSortingDropdown/PostsSortingDropdown';
+export AuthButtons from './AuthButtons/AuthButtons';

@@ -9,6 +9,8 @@ import responsivePoint from 'theme/semantic-variables';
 const radiumStyles = require('theme/RadiumStyles');
 const styles = require('./NavBarStyles');
 
+import { AuthButtons } from 'components';
+
 @Radium
 export default class NavBar extends Component {
 
@@ -26,8 +28,15 @@ export default class NavBar extends Component {
       </Link>
     );
 
+    const authButtons = (
+      <div className="item" style={styles.smallAtMobile} >
+        <AuthButtons />
+      </div>
+    );
+
     const rightMenu = (
       <div className="logged-in right menu" style={styles.menuItem}>
+        {authButtons}
         <Link to="/setting" className="blue item" style={[styles.menuItem, styles.mobileItem]}>
           <span className="setting-text">Setting</span>
         </Link>
