@@ -5,16 +5,18 @@ import { connect } from 'react-redux';
 
 import { PostsHeader } from 'containers';
 
-import { pushPath, pushQuery } from 'ducks/application/application';
+import { showLoginDialog, closeDialog, pushPath, pushQuery } from 'ducks/application/application';
 
 @connect(
   null,
-  { pushPath, pushQuery }
+  { showLoginDialog, closeDialog, pushPath, pushQuery }
 )
 @Radium
 export default class Home extends Component {
   static propTypes = {
     location: PropTypes.object.isRequired,
+    showLoginDialog: PropTypes.func.isRequired,
+    closeDialog: PropTypes.func.isRequired,
     pushPath: PropTypes.func.isRequired,
     pushQuery: PropTypes.func.isRequired
   };
@@ -72,6 +74,12 @@ export default class Home extends Component {
     return (
       <div className="home ui text container main-container">
         <Helmet title="Home"/>
+        <div className="ui buttons">
+          <button type="button" className="ui left attached blue button" onClick={this.props.showLoginDialog} > Show Action </button>
+          <button type="button" className="ui right attached green button" onClick={this.props.closeDialog} > Close Action </button>
+        </div>
+        <br/>
+        <br/>
         <div className="ui input">
           <input type="text" name="user" placeholder={'type user id'} ref="userId"/>
           <button type="button" className="ui grey button" onClick={this.moveToUser} > Go! </button>

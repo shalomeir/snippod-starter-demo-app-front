@@ -1,6 +1,45 @@
 const debug = require('utils/getDebugger')('application');
 import { browserHistory as history } from 'react-router';
 
+const SHOW_LOGIN_DIALOG = 'application/application/SHOW_LOGIN_DIALOG';
+const CLOSE_DIALOG = 'application/application/CLOSE_DIALOG';
+
+export function showLoginDialog() {
+  return {
+    type: SHOW_LOGIN_DIALOG
+  };
+}
+
+export function closeDialog() {
+  return {
+    type: CLOSE_DIALOG
+  };
+}
+
+const initialState = {
+  loginDialog: false
+};
+
+// Modal Window Overlay switch reducers.
+export default function reducer(state = initialState, action = {}) {
+
+  switch (action.type) {
+    case SHOW_LOGIN_DIALOG:
+      return {
+        ...state,
+        loginDialog: true
+      };
+    case CLOSE_DIALOG:
+      return {
+        ...state,
+        loginDialog: false
+      };
+    default:
+      return state;
+  }
+}
+
+
 // This function is used for override query url
 export function overrideQuery(query) {
   return (dispatch, getState) => {
