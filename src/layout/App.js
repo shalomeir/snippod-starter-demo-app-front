@@ -8,7 +8,8 @@ export default class App extends Component {
 
     return (
       <div id="app" className="app" >
-        <Card />
+        <Card title="Welcome"/>
+        <Card title="이건 또 다른 카드"/>
       </div>
     );
   }
