@@ -3,7 +3,7 @@ import Radium from 'radium';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 
-import { PostsHeader } from 'containers';
+import { PostsHeader, Posts } from 'containers';
 
 import { showLoginDialog, closeDialog, pushPath, pushQuery } from 'ducks/application/application';
 
@@ -86,6 +86,7 @@ export default class Home extends Component {
         </div>
         <PostsHeader sortingOption={this.state.sortingOption}
                      changeSortingOption={this.changeSortingOption} />
+        <Posts option={this.state.sortingOption} />
       </div>
     );
   }

@@ -6,7 +6,7 @@
  This will create individual component repositories for each SUI component
 
   * copy component files from release
-  * create commonjs files as index.js for NPM release
+  * create commonjs files as postings.js for NPM release
   * create release notes that filter only items related to component
   * custom package.json file from template
   * create bower.json from template
