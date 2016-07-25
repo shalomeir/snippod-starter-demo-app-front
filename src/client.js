@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router';
 //import { reduxReactRouter, ReduxRouter } from 'redux-router';
 import './utils/supportIntl';
+import './utils/defaultScript';
 
 const client = new ApiClient();
 
