@@ -81,6 +81,9 @@ Almost front source architecture is based on ['React Redux Universal Hot Example
 
 If you want to follow step by step, go to a [**codelab**](https://github.com/shalomeir/snippod-starter-demo-app-front/tree/codelab) branch of this repository.
 
+More information is available at [**this blog post**](http://www.shalomeir.com/2016/07/snippod-starter-demo-app-full-stack-react-redux-django/) written in **Korean**.
+
+
 ## Demo
 
 A demonstration of this app can be seen [here](http://snippod-demo-front.ap-northeast-2.elasticbeanstalk.com/).
