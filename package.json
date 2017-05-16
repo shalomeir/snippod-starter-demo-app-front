@@ -192,7 +192,8 @@
     "url-loader": "0.5.7",
     "validator": "4.9.0",
     "webpack": "1.12.14",
-    "webpack-isomorphic-tools": "2.2.31"
+    "webpack-isomorphic-tools": "2.2.31",
+    "node-sass": "3.8.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
