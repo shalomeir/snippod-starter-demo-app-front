@@ -31,14 +31,14 @@ if (global.Intl) {
   //}
 } else {
   // No `Intl`: use and load polyfill
-  global.Intl = require('intl');
-  require.ensure([
-    'intl',
-    'intl/locale-data/jsonp/en.js',
-    'intl/locale-data/jsonp/ko.js'
-  ], (require) => {
-    require('intl');
-    require('intl/locale-data/jsonp/en.js');
-    require('intl/locale-data/jsonp/ko.js');
-  });
+  // global.Intl = require('intl');
+  // require.ensure([
+  //   'intl',
+  //   'intl/locale-data/jsonp/en.js',
+  //   'intl/locale-data/jsonp/ko.js'
+  // ], (require) => {
+  //   require('intl');
+  //   require('intl/locale-data/jsonp/en.js');
+  //   require('intl/locale-data/jsonp/ko.js');
+  // });
 }
