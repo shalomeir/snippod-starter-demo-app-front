@@ -3,7 +3,7 @@
   "description": "A front part of the 'snippod-starter-demo-app' Full stack demo application based on React and Redux",
   "author": "Seonggyu Lee <shalomeir@gmail.com> (http://github.com/shalomeir)",
   "license": "MIT",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/shalomeir/snippod-starter-demo-app-front"
@@ -29,8 +29,9 @@
   "scripts": {
     "start": "concurrent --kill-others \"npm run start-prod\"",
     "start-prod": "better-npm-run start-prod",
-    "build": "gulp --cwd ./semantic build && webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
+    "build": "npm run build-prod",
     "build-prod": "better-npm-run build-prod",
+    "build-app": "gulp --cwd ./semantic build && webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
     "build:semantic": "gulp --cwd ./semantic build",
     "build:i18n": "rimraf _translations && babel --quiet --babelrc .babelrc.i18n src > /dev/null",
     "build:i18n:langs": "npm run build:i18n && babel-node scripts/i18nToXliff.js",
@@ -48,7 +49,7 @@
   },
   "betterScripts": {
     "build-prod": {
-      "command": "npm run build",
+      "command": "npm run build-app",
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
