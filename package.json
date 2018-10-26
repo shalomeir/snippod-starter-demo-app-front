@@ -3,7 +3,7 @@
   "description": "A front part of the 'snippod-starter-demo-app' Full stack demo application based on React and Redux",
   "author": "Seonggyu Lee <shalomeir@gmail.com> (http://github.com/shalomeir)",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/shalomeir/snippod-starter-demo-app-front"
@@ -230,6 +230,6 @@
     "webpack-hot-middleware": "2.10.0"
   },
   "engines": {
-    "node": "4.4.6"
+    "node": "5.12.0"
   }
 }
