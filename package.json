@@ -175,7 +175,6 @@
     "redux-form": "4.2.2",
     "redux-thunk": "1.0.3",
     "reselect": "2.2.1",
-    "sass-loader": "3.2.0",
     "serialize-javascript": "1.2.0",
     "serve-favicon": "2.3.0",
     "shallowequal": "0.2.2",
@@ -192,8 +191,7 @@
     "url-loader": "0.5.7",
     "validator": "4.9.0",
     "webpack": "1.12.14",
-    "webpack-isomorphic-tools": "2.2.31",
-    "node-sass": "3.8.0"
+    "webpack-isomorphic-tools": "2.2.31"
   },
   "devDependencies": {
     "chai": "3.5.0",
@@ -210,6 +208,8 @@
     "imports-loader": "0.6.5",
     "isomorphic-style-loader": "1.0.0",
     "json-loader": "0.5.4",
+    "sass-loader": "3.2.0",
+    "node-sass": "3.8.0",
     "karma": "0.13.22",
     "karma-cli": "0.1.2",
     "karma-mocha": "0.2.2",
