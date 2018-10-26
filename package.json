@@ -29,6 +29,7 @@
   "scripts": {
     "start": "concurrent --kill-others \"npm run start-prod\"",
     "start-prod": "better-npm-run start-prod",
+    "build": "concurrent --kill-others",
     "build-prod": "better-npm-run build-prod",
     "build-app": "gulp --cwd ./semantic build && webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
     "build:semantic": "gulp --cwd ./semantic build",
