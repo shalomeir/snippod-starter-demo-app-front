@@ -31,7 +31,7 @@ We made this using these technologies.
 ## Getting Started
 Preliminaries :
 * npm v2.15.5 or higher
-* Node v4.4.6 - We highly recommend [Node Version Manager (NVM)](https://github.com/creationix/nvm)
+* Node v5.12.0 - We highly recommend [Node Version Manager (NVM)](https://github.com/creationix/nvm)
 
 You have to git clone this repository.
 ```
@@ -115,4 +115,4 @@ Contributions, questions and comments are all welcome and encouraged.
 ## License
 [MIT License](http://opensource.org/licenses/MIT).
 
-Copyright 2016 [Snippod Inc.](https://www.snippod.com/)
+Copyright 2018 [Snippod Inc.](https://www.snippod.com/)
