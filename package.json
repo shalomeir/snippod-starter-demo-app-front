@@ -127,7 +127,7 @@
     "file-loader": "0.8.5",
     "hoist-non-react-statics": "1.0.5",
     "http-proxy": "1.13.2",
-    "jquery": "2.2.1",
+    "jquery": "3.5.0",
     "less": "2.6.1",
     "less-loader": "2.2.2",
     "lodash": "3.10.1",
