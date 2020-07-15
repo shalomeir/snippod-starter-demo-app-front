@@ -130,7 +130,7 @@
     "jquery": "2.2.1",
     "less": "2.6.1",
     "less-loader": "2.2.2",
-    "lodash": "3.10.1",
+    "lodash": "4.17.19",
     "lodash-decorators": "3.0.1",
     "lru-memoize": "1.0.1",
     "intl-locales-supported": "1.0.0",
